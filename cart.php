@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E- Store | Home</title>
+    <title>E- Store | Cart</title>
     <?php
       include 'includes/header.php'; ?>
   </head>

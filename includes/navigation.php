@@ -32,27 +32,31 @@
   </div>
 </nav>
 
-<!--  modal for login  -->
-<div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="Login">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="Login">LOGIN</h4>
-      </div>
-      <div class="modal-body">
-        <form action="includes/login_script.php" method="post">
-          <p>Don't have an account? <a class="text-info" href="signup.php">Register</a></p>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Email">
+<?php
+  if (!isset($_SESSION['email'])) { ?>
+    <!--  modal for login  -->
+    <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="Login">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="Login">LOGIN</h4>
           </div>
-          <div class="form-group">
-            <input type="password" class="form-control" placeholder="Password">
+          <div class="modal-body">
+            <form action="includes/login_script.php" method="post">
+              <p>Don't have an account? <a class="text-info" href="signup.php">Register</a></p>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form><br>
+            <a class="text-info" href="#">Forgot Password?</a>
           </div>
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form><br>
-        <p class="text-info"><a href="#">Forgot Password?</a></p>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+<?php
+  } ?>

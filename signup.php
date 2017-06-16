@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E- Store | Home</title>
+    <title>E- Store | Signup</title>
     <?php
       include 'includes/header.php'; ?>
   </head>
@@ -15,28 +15,28 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-sm-6">
-            <img class="img-responsive" src="images/3.jpg" alt="img"/>
+            <img class="img-responsive" src="images/yess.jpg" alt="signup-img"/>
           </div>
           <div class="col-md-4 col-md-offset-2 col-sm-6">
             <h2>SIGN UP</h2>
             <form class="text-right" action="#" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="text" class="form-control" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="email" class="form-control" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" placeholder="Password">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="text" class="form-control" placeholder="Contact">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="text" class="form-control" placeholder="City">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="text" class="form-control" placeholder="Address">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E- Store | Home</title>
+    <title>E- Store | Contact Us</title>
     <?php
       include 'includes/header.php'; ?>
   </head>
@@ -19,7 +19,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="col-md-3 col-sm-4">
-            <img class="img-responsive" src="images/3.jpg" alt="img"/>
+            <img class="img-responsive" src="images/contact.png" alt="contact-icon"/>
           </div>
         </div>
         <div class="row">
@@ -27,13 +27,16 @@
             <h3>CONTACT US</h3>
             <form action="#" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="name" rows="8" cols="80"></textarea>
+                <label for="msg">Message:</label>
+                <textarea class="form-control" id="msg" rows="6" cols="80"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>

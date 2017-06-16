@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>E- Store | Home</title>
+    <title>E- Store | Change Passowrd</title>
     <?php
       include 'includes/header.php'; ?>
   </head>
@@ -14,17 +14,17 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
-            <h2>SIGN UP</h2>
-            <form action="index.html" method="post">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <h2>Change Password</h2>
+            <form action="#" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" placeholder="Old Password">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" placeholder="New Password">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" id="" placeholder="">
+                <input type="password" class="form-control" placeholder="Re-type New Password">
               </div>
               <button type="submit" class="btn btn-primary">Change</button>
             </form>
