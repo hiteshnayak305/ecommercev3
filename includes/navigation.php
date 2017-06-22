@@ -46,10 +46,10 @@
             <form action="includes/login_script.php" method="post">
               <p>Don't have an account? <a class="text-info" href="signup.php">Register</a></p>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Email">
+                <input type="text" class="form-control" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" name="password" placeholder="Password">
               </div>
               <button type="submit" class="btn btn-primary">Login</button>
             </form><br>

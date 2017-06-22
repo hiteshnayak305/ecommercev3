@@ -1,3 +1,9 @@
+<?php
+  require 'includes/dbconnect.php';
+  if (isset($_SESSION['email'])) {
+    header("Location: http://localhost/ecommercev2/home.php");
+  }
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,9 +25,9 @@
           </div>
           <div class="col-md-4 col-md-offset-2 col-sm-6">
             <h2>SIGN UP</h2>
-            <form class="text-right" action="#" method="post">
+            <form class="text-right" action="includes/signup_script.php" method="post">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" name="name" placeholder="Name">
               </div>
               <div class="form-group">
                 <input type="email" class="form-control" placeholder="Email">

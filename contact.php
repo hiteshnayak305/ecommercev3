@@ -25,18 +25,18 @@
         <div class="row">
           <div class="col-md-8 col-sm-6">
             <h3>CONTACT US</h3>
-            <form action="#" method="post">
+            <form action="includes/feedback.php" method="post">
               <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" name="name" id="name">
               </div>
               <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" name="email" id="email">
               </div>
               <div class="form-group">
                 <label for="msg">Message:</label>
-                <textarea class="form-control" id="msg" rows="6" cols="80"></textarea>
+                <textarea class="form-control" name="message" id="msg" rows="6" cols="80"></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
