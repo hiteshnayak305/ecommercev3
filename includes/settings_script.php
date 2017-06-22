@@ -5,7 +5,7 @@
   $new_password1 = mysqli_real_escape_string($connection,$_POST['npassword1']);
   $pattern = "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$";
   if (!preg_match($pattern, $new_password1, $arr)) {
-    header("Location: http://localhost/ecommercev2/settings.php?err=no_format");
+    header("Location: http://localhost/ecommercev3/settings.php?err=no_format");
   }
   $new_password2 = mysqli_real_escape_string($connection,$_POST['npassword2']);
   //create query
@@ -18,12 +18,12 @@
       $enc_password = md5($new_password1);
       $query = "UPDATE users SET password='$enc_password'";
       $status = mysqli_query($connection, $query);
-      header("Location: http://localhost/ecommercev2/product.php");
+      header("Location: http://localhost/ecommercev3/home.php");//successful
     } else {
-      header("Location: http://localhost/ecommercev2/settings.php?err=no_match");
+      header("Location: http://localhost/ecommercev3/settings.php?err=no_match");//not match
     }
 
   } else {
-    header("Location: http://localhost/ecommercev2/settings.php?err=wrong_pass");
+    header("Location: http://localhost/ecommercev3/settings.php?err=wrong_pass"); //wrong password
   }
  ?>

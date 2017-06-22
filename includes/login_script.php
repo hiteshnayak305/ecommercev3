@@ -13,7 +13,7 @@
 
   //check existence
   if ($num_rows < 1) {
-    #header("Location: http://localhost/ecommercev2/login.php?err=no_user");
+    header("Location: http://localhost/ecommercev3/index.php?err=no_user");
   } else {
     //check for password
     $res_arr = mysqli_fetch_array($result);
@@ -24,7 +24,7 @@
       $_SESSION['name'] = $res_arr['name'];
       header("Location: http://localhost/ecommercev3/home.php");
     } else {
-      #header("Location: http://localhost/ecommercev2/login.php?err=no_pass");
+      header("Location: http://localhost/ecommercev3/index.php?err=no_pass");
     }
   }
  ?>

@@ -1,3 +1,6 @@
+<?php
+  require 'includes/dbconnect.php';
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,7 +28,7 @@
         <div class="row">
           <div class="col-md-8 col-sm-6">
             <h3>CONTACT US</h3>
-            <form action="includes/feedback.php" method="post">
+            <form action="#" method="post">
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" class="form-control" name="name" id="name">

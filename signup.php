@@ -1,7 +1,7 @@
 <?php
   require 'includes/dbconnect.php';
   if (isset($_SESSION['email'])) {
-    header("Location: http://localhost/ecommercev2/home.php");
+    header("Location: http://localhost/ecommercev3/home.php");
   }
  ?>
 <!DOCTYPE html>
@@ -30,19 +30,19 @@
                 <input type="text" class="form-control" name="name" placeholder="Name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email">
+                <input type="email" class="form-control" name="email" placeholder="Email">
               </div>
               <div class="form-group">
-                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" name="password" placeholder="Password">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Contact">
+                <input type="text" class="form-control" name="contact" placeholder="Contact">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="City">
+                <input type="text" class="form-control" name="city" placeholder="City">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Address">
+                <input type="text" class="form-control" name="address" placeholder="Address">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>

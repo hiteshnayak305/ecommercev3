@@ -5,5 +5,5 @@
   //create query
   $query = "DELETE FROM user_items WHERE user_id=$user_id AND item_id=$item_id";
   $status = mysqli_query($connection, $query) or die('unable to remove!!!');
-  header("Location: http://localhost/ecommercev2/cart.php");
+  header("Location: http://localhost/ecommercev3/cart.php");
  ?>

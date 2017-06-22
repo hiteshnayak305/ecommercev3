@@ -1,3 +1,6 @@
+<?php
+  require 'includes/dbconnect.php';
+ ?>
 <!DOCTYPE html>
 <html>
   <head>

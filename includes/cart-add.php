@@ -6,5 +6,5 @@
   //create query
   $query = "INSERT INTO user_items(user_id,item_id,status) VALUES ('$user_id','$item_id','Added to cart')";
   $status = mysqli_query($connection, $query) or die('unable to add!!!');
-  header("Location: http://localhost/ecommercev2/product.php");
+  header("Location: http://localhost/ecommercev3/home.php");
  ?>
