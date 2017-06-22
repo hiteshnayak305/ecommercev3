@@ -20,12 +20,13 @@
     <main>
       <div class="container">
         <div class="row">
-          <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+          <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <table class="table">
               <thead>
                 <tr>
-                  <th>Item Number</th>
-                  <th>Price</th>
+                  <th class="text-center">Item Number</th>
+                  <th class="text-center">Name</th>
+                  <th class="text-center">Price</th>
                 </tr>
               </thead>
               <tbody>
@@ -36,9 +37,9 @@
                   if (mysqli_num_rows($result) < 1) {  ?>
                     <tr>
                       <td>&nbsp;</td>
-                      <td>Add items to the cart first!</td>
+                      <td class="text-center">Add items to the cart first!</td>
                       <td>&nbsp;</td>
-                      <td><a class="btn btn-primary" href="home.php">Go to home page!</a></td>
+                      <td class="text-center"><a class="btn btn-primary" href="home.php">Go to home page!</a></td>
                     </tr>
                   <?php } else {
                       $price = 0;
@@ -49,18 +50,18 @@
                         $rem_link = "includes/cart-remove.php?id=".$row['item_id'];
                         $url = $url."id[]=".$row['item_id']."&"; ?>
                         <tr>
-                          <td><?php echo $item_num;?></td>
-                          <td><?php echo $row['name'];?></td>
-                          <td>Rs <?php echo $row['price'];?>.00/-</td>
-                          <td><a class="btn btn-primary" href="<?php echo $rem_link;?>">Remove</a></td>
+                          <td class="text-center"><?php echo $item_num;?></td>
+                          <td class="text-center"><?php echo $row['name'];?></td>
+                          <td class="text-center">Rs <?php echo $row['price'];?>.00/-</td>
+                          <td class="text-center"><a class="btn btn-primary" href="<?php echo $rem_link;?>">Remove</a></td>
                         </tr>
                       <?php $item_num++;
                         }  ?>
                         <tr>
                           <td>&nbsp;</td>
-                          <td>Total</td>
-                          <td>Rs <?php echo $price;?>.00/-</td>
-                          <td><a class="btn btn-primary" href="<?php echo $url;?>">Confirm Order</a></td>
+                          <td class="text-center">Total</td>
+                          <td class="text-center">Rs <?php echo $price;?>.00/-</td>
+                          <td class="text-center"><a class="btn btn-primary" href="<?php echo $url;?>">Confirm Order</a></td>
                         </tr>
                     <?php } ?>
               </tbody>

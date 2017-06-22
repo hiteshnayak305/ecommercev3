@@ -31,7 +31,7 @@
           <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <p class="lead text-center">Thankyou! for ordering from E-Store. The order shall be delivered to you shortly.</p>
             <br><br>
-            <p class="text-center">Order some more electronic items <a class="text-info" href="#">here.</a></p>
+            <p class="text-center">Order some more electronic items <a class="text-info" href="home.php">here.</a></p>
           </div><!--- col  -->
         </div><!----- row -->
       </div><!---   container ---->

@@ -22,7 +22,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
             <h2>Change Password</h2>
-            <form action="settings_script.php" method="post">
+            <form action="includes/settings_script.php" method="post">
               <div class="form-group">
                 <input type="password" class="form-control" name="opassword" placeholder="Old Password">
               </div>

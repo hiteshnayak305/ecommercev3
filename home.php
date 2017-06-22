@@ -42,13 +42,12 @@
                         <a class="btn btn-primary btn-block" href="<?php echo $add;?>">Add to cart</a>
                     <?php
                           }
-                        $item_num++;
-                      }  ?>
+                        $item_num++; ?>
                   </div>
                 </div>
               </div><!--col-->
-          <?php
-            } ?>
+              <?php
+                }  ?>
         </div><!--  row  -->
       </div>
     </main>
